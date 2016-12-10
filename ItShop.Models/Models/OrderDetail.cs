@@ -12,7 +12,12 @@ namespace ItShop.Models.Models
         [Key]
         public int OderId { get; set; }
 
-        [Required]
         public int Quality { get; set; }
+
+        [ForeignKey("OderId")]
+        public virtual Order Order { set; get; }
+
+        [ForeignKey("ProductId")]
+        public virtual Product Product { set; get; }
     }
 }

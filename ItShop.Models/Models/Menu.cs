@@ -11,9 +11,11 @@ namespace ItShop.Models.Models
         public int ID { set; get; }
 
         [Required]
+        [MaxLength(50)]
         public string Name { set; get; }
 
         [Required]
+        [MaxLength(256)]
         public string Url { set; get; }
 
         public int DisplayOrder { set; get; }
@@ -24,10 +26,9 @@ namespace ItShop.Models.Models
         [ForeignKey("GroupID")]
         public virtual MenuGroup MenuGroup { set; get; }
 
-        [Required]
+        [MaxLength(10)]
         public int Taget { set; get; }
 
-        [Required]
         public int Status { set; get; }
     }
 }
