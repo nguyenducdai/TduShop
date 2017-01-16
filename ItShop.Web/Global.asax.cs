@@ -1,5 +1,7 @@
-﻿using System;
+﻿using ItShop.Web.Mapping;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -14,6 +16,7 @@ namespace ItShop.Web
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
+            AutoMappingConfigraguraion.Config();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

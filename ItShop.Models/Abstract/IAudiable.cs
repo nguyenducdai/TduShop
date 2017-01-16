@@ -18,5 +18,6 @@ namespace ItShop.Models.Abstract
         DateTime? UpdateAt { set; get; }
 
         bool Status { set; get; }
+
     }
 }

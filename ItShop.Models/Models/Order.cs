@@ -21,7 +21,6 @@ namespace ItShop.Models.Models
         public string CustomerAdress { get; set; }
 
         [Required]
-        [MaxLength(256)]
         public int CustomerPhone { get; set; }
 
         [Required]

@@ -36,7 +36,8 @@ namespace ItShop.Models.Models
         [MaxLength(500)]
         public string Descaption { get; set; }
 
-        public XElement MoreImage { get; set; }
+        [Column(TypeName ="xml")]
+        public string MoreImage { get; set; }
 
         public decimal Price { get; set; }
 

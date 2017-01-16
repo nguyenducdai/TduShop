@@ -7,9 +7,11 @@ namespace ItShop.Models.Models
     public class OrderDetail
     {
         [Key]
+        [Column(Order =1)]
         public int ProductId { get; set; }
 
         [Key]
+        [Column(Order = 2)]
         public int OderId { get; set; }
 
         public int Quality { get; set; }

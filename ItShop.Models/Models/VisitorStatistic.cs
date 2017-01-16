@@ -14,7 +14,6 @@ namespace ItShop.Models.Models
         [Required]
         public DateTime VisitedDate { set; get; }
 
-        [MaxLength(50)]
         public int IPAdress { set; get; }
     }
 }

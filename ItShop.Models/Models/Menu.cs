@@ -26,7 +26,6 @@ namespace ItShop.Models.Models
         [ForeignKey("GroupID")]
         public virtual MenuGroup MenuGroup { set; get; }
 
-        [MaxLength(10)]
         public int Taget { set; get; }
 
         public int Status { set; get; }
